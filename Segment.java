@@ -9,10 +9,27 @@ public class Segment {
   int[][] digits; 
   int posRow;
   int posCol;
-
-  public Segment(short[][] nums) {
-    
+  
+  /**
+   *  constructor
+   */
+  public Segment(int[][] nums, int x, int y) {
+    digits = nums;
+    posRow = y;
+    posCOl = x;
   }
+
+  /**
+   * getters and setters
+   */
+
+  /**
+   * set a single digit of a segment
+   */
+  public int setDigit(int x, int y, int digit) {
+    int index = 3 * (x) + y 
+  }
+
 
 }
 
