@@ -1,15 +1,16 @@
 sudoku
 sudoku project
 
-new data structure?
+**NOTEs
+
+  X/Y Coordinates:  x measured from left to right starting at 0
+                    y measured from 0 starting at the top unless indexing 
+                    disagrees
 
 java class BOARD
-  contains a 2d array of SEGMENT
   method to print board
-  method to set a segment (int x, int y, Segment newSeg)
+ 
 
-
-each SEGMENT contains a 2d array of integers from 0-9
 
 0 is a currently unsolved cell
 

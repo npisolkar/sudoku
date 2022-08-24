@@ -29,7 +29,13 @@ public class Segment {
   public int setDigit(int x, int y, int digit) {
     int index = 3 * (x) + y 
   }
-
+  
+  public int[] getSegmentColumn(int whichColumn) {
+    int[] arr = int[3];
+    for (int i = 0; i < 3; i++) 
+      int[i] = digits[i][whichColumn];
+    return arr;
+  }
 
 }
 
