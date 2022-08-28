@@ -76,9 +76,25 @@ public class SudokuBoard {
   }
   
 
+  /**
+   * returns a 2-dimensional array of a 3x3 segment of the 
+   * sudoku board col  ranges from 1 - 3  from top to bottom
+   * and row ranges from 0-2 left to right
+   */
 
-  public int[][] getSegment(int x, int y) {
-    return null;    
+  public int[][] getSegment(int row, int col) {
+    if (x < 0 || x > 2 || y <  0 || y > 2) {
+      // later may add specific exception
+      return null:
+    }
+
+    int[][] arr = int[3][3];
+
+    for (int i = 0; i < 3; i++) {
+      for (int m = 0; m < 3; m++) {
+        arr[m][i] = boardArr[(y * 3) + m][];
+      }
+    }
   }
 
 }
