@@ -82,7 +82,7 @@ public class SudokuBoard {
    * and row ranges from 0-2 left to right
    */
 
-  public int[][] getSegment(int row, int col) {
+  public int[][] getSegment(int y, int x) {
     if (x < 0 || x > 2 || y <  0 || y > 2) {
       // later may add specific exception
       return null:
@@ -92,11 +92,11 @@ public class SudokuBoard {
 
     for (int i = 0; i < 3; i++) {
       for (int m = 0; m < 3; m++) {
-        arr[m][i] = boardArr[(y * 3) + m][];
+        arr[m][i] = boardArr[(y - 1) * 3 + i][(x - 1) * 3 + m];
       }
     }
+    return arr;
   }
-
 }
 
 

@@ -10,7 +10,8 @@ sudoku project
 java class BOARD
   method to print board
  
-
+- 3d array of possibilities - start with populated with 1-9
+  values get turned to -0 when they are ruled out
 
 0 is a currently unsolved cell
 
@@ -24,6 +25,13 @@ to solve a puzzle first it should check each row, column, and segment
   to be able to do that we need a board method 
       int[] getCol(int x) 
       int[] getRow(int y)
+
+
+  -initial routine - method runSquare(int y, int x) {
+    - get the column, the row, and the segment
+    - scan empty blocks
+  }
+
 
   AND a Board  method 
       int[] getSegmentAsArray(int x, int y) //returns as read, LtR, TtB
