@@ -8,8 +8,15 @@ sudoku project
                     disagrees
 
 java class BOARD
-  method to print board
- 
+
+METHODS I NEED TO WRITE:
+
+- solveBoard method
+- method to print board
+
+
+// notables
+
 - 3d array of possibilities - start with populated with 1-9
   values get turned to -0 when they are ruled out
 
@@ -17,6 +24,16 @@ java class BOARD
 
 given a sudoku puzzle should be able to solve it
 
+
+
+
+
+OVERALL IDEAS - ROUTINES TO STRUCTURE METHOD LIST
+ - i want to start with itereating  through every unfilled cell
+   and checking the column, row, and the segment and making sure
+   that all of the numbers in the row, column, and segment, are no longer
+   valid possibilities in the possArr array
+  
 
 
 
